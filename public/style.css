@@ -1,0 +1,223 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Bebas Neue";
+  font-size: 18px;
+  color: white;
+  background-image: url("./background.jpeg");
+}
+
+.container {
+  margin-top: 25px;
+  column-gap: 5px;
+}
+h5 {
+  padding: 20px 0;
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+  text-align: center;
+  background: #efeee7;
+}
+
+.card {
+  width: 15rem;
+  margin: 10px;
+  position: relative;
+}
+.like {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background: rgba(51, 143, 143, 0.651);
+}
+
+.like:hover {
+  background: teal;
+}
+
+nav {
+  font-family: "Bebas Neue";
+  font-size: 30px;
+}
+
+#title {
+  font-size: 45px;
+}
+
+h4 {
+  text-align: center;
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+  color: gray;
+}
+
+hr {
+  background-color: lightgray;
+}
+
+.recentlinks {
+  color: lightgray;
+}
+
+.publish_date {
+  color: lightgray;
+  line-height: 5px;
+  font-size: 16px;
+}
+
+#textarea1 {
+  visibility: hidden;
+}
+
+#welcome {
+  padding: 10px 0 10px 10px;
+}
+
+.loginstuff {
+  text-decoration: none;
+  color: white;
+  padding: 10px 0 10px 10px;
+}
+.myFavs {
+  text-align: center;
+  padding: 15px;
+  font-size: 30px;
+  color: white;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+.tcontainer {
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+.ticker-wrap {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  height: 2em;
+  background-color: #0e0a00;
+  padding-left: 100%;
+  box-sizing: content-box;
+}
+.ticker-move {
+  display: inline-block;
+  white-space: nowrap;
+  padding-right: 100%;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-name: ticker;
+  animation-duration: 30s;
+}
+.ticker-move:hover {
+  animation-play-state: running;
+}
+.ticker-item {
+  display: inline-block;
+  padding: 0 2rem;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.modal-body {
+  font-family: "Lucida Sans";
+}
+
+.chat-popup > body {
+  font-family: Arial;
+}
+
+* {
+  box-sizing: border-box;
+
+  margin: 0;
+
+  padding: 0;
+}
+
+.chat-popup > h1 {
+  position: absolute;
+
+  left: 50%;
+
+  top: 25%;
+
+  transform: translate(-50%);
+
+  font-size: 50px;
+
+  color: rgba(255, 255, 255, 1);
+}
+
+.chat-popup > .open-button {
+  background-color: rgb(0, 189, 173);
+  color: rgb(0, 0, 0);
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  opacity: 0.8;
+  position: fixed;
+  bottom: 20px;
+  right: 28px;
+  width: 280px;
+}
+
+.chat-popup {
+  position: fixed;
+  bottom: 0;
+  left: 15px;
+  border: 3px solid #f1f1f1;
+  z-index: 0;
+}
+
+.chat-popup > .form-container {
+  max-width: 300px;
+  padding: 10px;
+  background-color: rgb(40, 41, 136);
+  color: white;
+}
+
+.chat-popup > .form-container textarea {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  min-height: 200px;
+}
+
+.chat-popup > .form-container > .btn {
+  background-color: #00b60f;
+  color: #000000;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  margin-bottom: 10px;
+  opacity: 0.8;
+}
+
+.chat-popup > .form-container > .clear {
+  background-color: rgba(255, 0, 0, 0.952);
+  color: rgba(14, 11, 11, 0.8);
+}
+
+.chat-popup > .form-container .btn:hover,
+.open-button:hover {
+  opacity: 1;
+}
